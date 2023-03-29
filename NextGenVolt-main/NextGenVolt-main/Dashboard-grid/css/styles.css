@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+h3 {
+  display: inline;
+  vertical-align: middle;
+}
+/* NAV  */
+
+aside {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);  
+  width: 15%;
+  padding: 3em 2.5rem 2em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+aside img {
+  width: 10rem;
+}
+
+aside h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-top: 30px;
+}
+
+aside span {
+  font-weight: 600;
+}
+
+aside p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.nav {
+  gap: 20px 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+
+.nav li {
+  font-size: 1.75rem;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav li:after {
+content: "";
+background-color: purple;
+border-bottom: 3px solid purple;
+width: 0%;
+position: absolute;
+transition: 0.3s;
+}
+
+.nav li:hover:after  {
+  width: 100%;
+}
+
+.nav li a:hover {
+  color: purple;
+  font-weight: 600;
+}
+
+.nav li a:focus{
+  color: purple;
+  font-weight: 600;
+}
+
+.nav li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  gap: 10px;
+  padding: 7.5px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.nav li img {
+  width: 2.5rem;
+  padding-left: 5px;
+}
+
+
+/* LOG UIT */
+
+aside footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+
+aside footer a {
+  text-decoration: none;
+  color: black;
+}
+
+aside footer a img {
+  width: 2rem;
+  vertical-align: middle;
+}
+
+
+/* CARDS */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(13,1fr);
+  grid-template-rows: repeat(13,1fr);
+  width: 100%;
+}
+
+.cards div{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);  
+  border-radius: 10px;
+}
+
+.card1 {
+  grid-column: 2 / 5;
+  grid-row: 2 / 7;
+}
+
+.card2 {
+  grid-column: 6 / 9;
+  grid-row: 2 / 7;
+}
+
+.card3 {
+  grid-column: 10 / 13;
+  grid-row: 2 / 7;
+}
+
+.card4 {
+  grid-column: 2 / 5;
+  grid-row: 8 / 13;}
+
+.card5 {
+  grid-column: 6 / 9;
+  grid-row: 8 / 13;}
+
+.card6 {
+  grid-column: 10 / 13;
+  grid-row: 8 / 13;
+}
