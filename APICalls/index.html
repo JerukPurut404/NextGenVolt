@@ -4,15 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js" defer></script>
+  <style>
+	</style>
   <title>API test</title>
 </head>
 <body>
-  <p id="weather_code" style="width:50px"></p>
+  <p id="weather_code"></p>
   <p id="weather_status"></p>
   <p id="js--date"></p>
   <p id="js--time"></p>
   <p id="js--sunrise"></p>
   <p id="js--sunset"></p>
+  <p id="js--moonrise"></p>
+  <p id="js--moonset"></p>
+  <p id="binnen-temp">Temperatuur: 0°C</p>
+  <p id="vochtigheid">Vochtigheid: 0%</p>
+  <p id="heatIndex">Heat Index: 0%</p>
+  <p id="Licht">Licht hoeveelheid: 0%</p>
+  <p id="LED1status">Led 1 Status is undefined</p>
+  <p id="LED2status">Led 2 Status is undefined</p>
+  <p id="LED3status">Led 3 Status is undefined</p>
+  <canvas id="temperatureChart"></canvas>
 </body>
 </html>
