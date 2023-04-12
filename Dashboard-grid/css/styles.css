@@ -65,27 +65,10 @@ aside p {
   transition: 0.3s;
 }
 
-.nav li:after {
-content: "";
-background-color: purple;
-border-bottom: 3px solid purple;
-width: 0%;
-position: absolute;
-transition: 0.3s;
-}
-
-.nav li:hover:after  {
-  width: 100%;
-}
-
-.nav li a:hover {
+.nav li a:hover, .nav li a svg:hover, .nav li a:focus, .nav li a svg:focus {
   color: purple;
   font-weight: 600;
-}
-
-.nav li a:focus{
-  color: purple;
-  font-weight: 600;
+  fill: purple;
 }
 
 .nav li a {
@@ -99,7 +82,7 @@ transition: 0.3s;
   transition: 0.3s;
 }
 
-.nav li img {
+.nav li svg {
   width: 2.5rem;
   padding-left: 5px;
 }
@@ -128,16 +111,25 @@ aside footer a img {
 
 /* CARDS */
 
-.cards {
+main {
   display: grid;
   grid-template-columns: repeat(13,1fr);
   grid-template-rows: repeat(13,1fr);
   width: 100%;
 }
 
-.cards div{
+main div{
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);  
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+div:hover {
+  transform: scale(1.1);
 }
 
 .card1 {
@@ -157,7 +149,8 @@ aside footer a img {
 
 .card4 {
   grid-column: 2 / 5;
-  grid-row: 8 / 13;}
+  grid-row: 8 / 13;
+}
 
 .card5 {
   grid-column: 6 / 9;
@@ -167,3 +160,139 @@ aside footer a img {
   grid-column: 10 / 13;
   grid-row: 8 / 13;
 }
+
+
+/* HOME */
+
+.home .card2 p:nth-child(1) {
+  font-size: 6rem;
+}
+
+.home .card2 p:nth-child(2) {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.home .card2 p:nth-child(3) {
+  font-size: 5rem;
+}
+
+.home .card4 p {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.home .card4 p:nth-child(2) {
+  padding-bottom: 5rem;
+}
+
+.home .card5 p {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.home .card5 p:nth-child(2) {
+  padding-bottom: 5rem;
+}
+/* CARDS TIJD */
+
+.tijd .card1 {
+  grid-column: 2 / 13;
+}
+
+.tijd {
+  font-size: 8rem;
+  text-align: center;
+  
+}
+
+.date-letter {
+  text-align: center;
+  font-size: 6rem;
+}
+
+ .date-nummer {
+  text-align: center;
+  font-size: 4rem;
+ }
+
+ /* CONSOLE */
+
+ .card--stopwatch{
+  box-shadow: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.timerText{
+  font-size: 200%;
+}
+
+.button{
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  color: black;
+}
+.button--start{
+  background: #fdc830;
+  border: none;
+}
+.button--stop{
+  background: red;
+  border: none;
+
+}
+.button--reset{
+  background: #f37335;
+  border: none;
+}
+
+
+
+ /* PROFIEL PAGINA */
+
+ .profiel {
+  padding: 2rem;
+ }
+
+ .profiel article {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1); 
+  padding: 2rem; 
+  height: calc(100vh - 8rem);
+  justify-content: space-between;
+  border-radius: 10px;
+ }
+
+ .profiel article div {
+  padding: 2rem;
+ }
+
+ .profiel article div:nth-child(1) {
+  margin-bottom: 10rem;
+ }
+
+ .profiel article div h2 {
+  padding: 10px;
+ }
+
+ .profiel article div h2:nth-child(3) {
+  padding-top: 4rem;
+ }
+
+ .profiel article div input {
+  padding: 0.5rem;
+  width: 40rem;
+  border: none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1); 
+ }
+
+
+
+
