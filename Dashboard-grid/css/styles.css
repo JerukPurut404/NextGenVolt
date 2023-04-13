@@ -45,6 +45,7 @@ aside h1 {
 
 aside span {
   font-weight: 600;
+  color: #0473bb;
 }
 
 aside p {
@@ -66,9 +67,9 @@ aside p {
 }
 
 .nav li a:hover, .nav li a svg:hover, .nav li a:focus, .nav li a svg:focus {
-  color: purple;
-  font-weight: 600;
-  fill: purple;
+  color:  #0473bb;
+  font-weight: 700;
+  fill: #0473bb;
 }
 
 .nav li a {
@@ -164,6 +165,23 @@ div:hover {
 
 /* HOME */
 
+.home .card1, .home .card3, .home .card6 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.home .card1 p, .home .card3 p {
+  padding: 2rem;
+}
+
+.home .card6 p {
+  padding: 1rem;
+}
+
+.home .card1 span, .home .card3 span, .home .card6 span {
+  display: block;
+}
+
 .home .card2 p:nth-child(1) {
   font-size: 6rem;
 }
@@ -175,6 +193,7 @@ div:hover {
 
 .home .card2 p:nth-child(3) {
   font-size: 5rem;
+  color: #0473bb;
 }
 
 .home .card4 p {
@@ -258,12 +277,12 @@ div:hover {
 
  .profiel {
   padding: 2rem;
+  justify-content: center;
  }
 
  .profiel article {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1); 
   padding: 2rem; 
   height: calc(100vh - 8rem);
   justify-content: space-between;
@@ -278,8 +297,22 @@ div:hover {
   margin-bottom: 10rem;
  }
 
+ .profiel article button {
+  color: #ffffff;
+  background-color: #0473bb;
+  border: none;
+  padding: 1rem;
+  border-radius: 20px;
+ }
+
+ .profiel article button:hover {
+  transition: 0.3s;
+  background-color: #0472bbca;
+ }
+
  .profiel article div h2 {
   padding: 10px;
+  padding-bottom: 3rem;
  }
 
  .profiel article div h2:nth-child(3) {
@@ -288,10 +321,15 @@ div:hover {
 
  .profiel article div input {
   padding: 0.5rem;
-  width: 40rem;
+  width: 60vh;
   border: none;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.1); 
  }
+
+ .locatie div input {
+  margin-bottom: 30px;
+}
+
 
 
 
